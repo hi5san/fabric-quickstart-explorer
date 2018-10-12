@@ -1,7 +1,7 @@
 # fabric-quickstart-explorer
 Experimental docker images (DockerFile) for Hyperledger Fabric + Blockchain Explorer Quick start.
 
-This Dockerfile creates Ubuntu64 18.04LTS (bionic) docker container pre-bundled with Docker within, Blockchain Explorer and other dependent packages required to run Hyperledger Fabric v1.2 release (curr: 1.2.0) and Blochchain Explorer (curr: 3.7).
+This Dockerfile creates Ubuntu64 18.04LTS (bionic) docker container pre-bundled with Docker within, Blockchain Explorer and other dependent packages required to run Hyperledger Fabric v1.2 release (curr: 1.2.1) and Blochchain Explorer (curr: 3.7).
 
 The base OS container is https://hub.docker.com/r/hi5san/fabric-quickstart/.
 
