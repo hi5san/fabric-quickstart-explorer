@@ -18,8 +18,6 @@ RUN echo '#!/bin/sh' > $HOME/installExplorer.sh && \
 
 RUN echo '#!/bin/sh' > $HOME/runExplorer.sh && \
     echo 'if [ ! -d $HOME/fabric-samples/bin ]; then $HOME/installFabric.sh; fi' >> $HOME/runExplorer.sh && \
-    echo '#Workaround bootstrap.sh bug as of 10/12 which installs fabric-samples head instead of release-1.2' >> $HOME/runExplorer.sh && \
-    echo '(cd fabric-samples; git checkout release-1.2)' >> $HOME/runExplorer.sh && \
     echo 'echo Running byfn..' >> $HOME/runExplorer.sh && \
     echo '(cd fabric-samples/first-network; echo Y | ./byfn.sh down; echo Y | ./byfn.sh up)' >> $HOME/runExplorer.sh && \
     echo 'echo Starting explorer in 5 seconds...' >> $HOME/runExplorer.sh && \
